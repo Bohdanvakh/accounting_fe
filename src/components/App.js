@@ -6,7 +6,6 @@ import Dashboard from './Dashboard';
 function App() {
   return (
     <div className="App">
-      <h1 className="home-header">Home</h1>
       <BrowserRouter>
           <Routes>
             <Route path='/' element={<Home />} />

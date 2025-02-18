@@ -1,9 +1,10 @@
 import '../styles/App.css';
+import Registration from './auth/Registration';
 
 function Home() {
   return (
     <div className="Home">
-      <h1>Home</h1>
+      <Registration />
     </div>
   );
 }
