@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../../styles/App.css';
+import RegistrationForm from '../forms/RegistrationForm';
 
 export default class Registration extends Component {
     constructor(props) {
@@ -25,25 +26,7 @@ export default class Registration extends Component {
         return (
         <div className='registration-background'>
             <div className='registration-container'>
-                <form className='registration-form' onSubmit={this.handleSubmit}>
-                    <input type='username'
-                        name='username'
-                        placeholder='Username'
-                        value={this.state.username}
-                        onChange={this.handleChange}
-                        required
-                        className='form-input'
-                    />
-                    <input type='phone_number'
-                        name='phone_number'
-                        placeholder='Phone Number'
-                        value={this.state.phone_number}
-                        onChange={this.handleChange}
-                        required
-                        className='form-input'
-                    />
-                    <button type='submit' className='form-button'>Register</button>
-                </form>
+                <RegistrationForm />
             </div>
         </div>
         );
